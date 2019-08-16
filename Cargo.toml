@@ -77,3 +77,6 @@ members = [
 [patch.crates-io.runtime]
 git = "https://github.com/rustasync/runtime"
 rev = "f5ac4fb"
+
+[patch.crates-io.http-service]
+git = "https://github.com/rustasync/http-service"

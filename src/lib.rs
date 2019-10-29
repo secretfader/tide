@@ -2,8 +2,6 @@
 //!
 //! The [`App`](struct.App.html) docs are a good place to get started.
 
-#![cfg_attr(any(feature = "nightly", test), feature(external_doc))]
-#![cfg_attr(feature = "nightly", doc(include = "../README.md"))]
 #![warn(
     nonstandard_style,
     rust_2018_idioms,
@@ -13,7 +11,7 @@
 )]
 
 #[cfg(test)]
-#[doc(include = "../README.md")]
+doc_comment::doc_comment!("../README.md");
 const _README: () = ();
 
 pub use http;
